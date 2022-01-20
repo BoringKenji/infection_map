@@ -2,9 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'src/locations.dart' as locations;
 import 'package:http/http.dart' as http;
-import 'package:geocoding/geocoding.dart';
+//import 'package:geocoding/geocoding.dart';
 
 void main() {
   runApp(const MyApp());
@@ -82,8 +81,9 @@ Future<dynamic> getInfectionCase() async {
 }
 
 Future<dynamic> getcorrdinate(buildingName) async {
+  const String apikey = "APIKEY";
   String geoAPI =
-      "https://maps.googleapis.com/maps/api/geocode/json?address=$buildingName&key=AIzaSyCg_62Xw57CqRHD2FTf0ubt1jXqoY27eOI";
+      "https://maps.googleapis.com/maps/api/geocode/json?address=$buildingName&key=$apikey";
   try {
     final response = await http.get(Uri.parse(geoAPI));
     var result = jsonDecode(response.body);
