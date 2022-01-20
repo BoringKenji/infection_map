@@ -1,0 +1,13 @@
+1.google cloud platform setting
+	create apikey
+	enable function for andorid/ geocoing
+
+2.google map setting in flutter (Android/IOS/Web)
+
+3.add dependancy to flutter
+
+copy sample code from internet
+https://codelabs.developers.google.com/codelabs/google-maps-in-flutter#4
+
+get gov api and import to map
+https://data.gov.hk/en-data/dataset/hk-dh-chpsebcddr-novel-infectious-agent/resource/87cced97-618b-486b-b450-76a89397795b
